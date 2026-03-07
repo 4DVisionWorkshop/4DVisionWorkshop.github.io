@@ -249,3 +249,57 @@ body {
     font-size: 0.6rem !important;
   }
 }
+
+/* ── Hero responsive ── */
+.page-header1 .hero-body {
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.page-header1 .subtitle.has-text-centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+@media screen and (max-width: 520px) {
+  .page-header1 .title.is-1 {
+    font-size: 1.8rem !important;
+  }
+  .page-header1 .title.is-2,
+  .page-header1 p.title.is-2 {
+    font-size: 1.3rem !important;
+  }
+  .page-header1 .title.is-5 {
+    font-size: 0.9rem !important;
+  }
+  .page-header1 .subtitle .button {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page-header1 .hero-body {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  .page-header1 .title.is-1 {
+    font-size: 7.5vw !important;
+  }
+  .page-header1 .title.is-2,
+  .page-header1 p.title.is-2 {
+    font-size: 5.5vw !important;
+  }
+  .page-header1 .title.is-5 {
+    font-size: 3.8vw !important;
+  }
+  .page-header1 .subtitle .button {
+    font-size: 3.5vw;
+    padding: 3px 8px;
+  }
+  .section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
