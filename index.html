@@ -244,17 +244,17 @@ background-color: #5e565a;
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title" style="color:#EFECCA">4D Vision<br>
+            <h1 class="title is-1 publication-title" style="color:#EFECCA">2<sup>nd</sup> 4D Vision Workshop<br>
               <p class="title is-2 publication-title" style="color:#EFECCA">Modeling the Dynamic World
               </p>
             </h1>
             <h1 class="title is-5" style="color: #FF7F11;">
-              in conjunction with CVPR 2025, Nashville TN
+              in conjunction with CVPR 2026, Denver CO
             </h1>
             <h1 class="title is-5" style="color: #FF7F11;">
-              Time: 9:20am - 5:05pm CDT, Jun 11, 2025
+              Half-day Workshop, Date TBD
               <br>
-              Location: 104 B, Music City Center, Nashville TN
+              Denver Convention Center, Denver CO
             </h1>
           </div>
         </div>
@@ -263,12 +263,9 @@ background-color: #5e565a;
       <br>
       <br>
       <h2 class="subtitle has-text-centered">
-        <a href="#schedule" class="button">Schedule</a>
-          <a href="#speakers" class="button">Speakers</a>
-          <a href="#papers" class="button">Accepted Papers</a>
+        <a href="#speakers" class="button">Speakers</a>
           <a href="#dates" class="button">Call for Papers</a>
           <a href="#organizers" class="button">Organizers</a>
-        <!-- <a href="#reviewers" class="button">Program Committee</a> -->
       </h2>
     </div>
   </section>
@@ -277,85 +274,143 @@ background-color: #5e565a;
     <div class="container is-max-desktop content">
       <h2 class="title">Overview</h2>
       <div class="content has-text-justified">
-        We live in a dynamic 3D world. Enabling machines to see and understand the world in 4D (3D + time) unlocks numerous real-world applications across various domains. These include designing autonomous robots capable of navigating and interacting with complex real-world environments, creating immersive and interactive virtual worlds that seamlessly blend with physical reality, and unveiling the mysteries of life and the universe, for instance, in biology and astrophysics. Computer vision lies at the core of these innovations, offering the tools to capture and model the 4D world from partially-observed image data.
+        We live in a dynamic 3D world. Enabling machines to see and understand the world in 4D (3D + time) unlocks numerous real-world applications across various domains. These include designing autonomous robots capable of navigating and interacting with complex real-world environments, creating immersive and interactive virtual worlds that seamlessly blend with physical reality, and unveiling the mysteries of life and the universe, for instance, in biology and astrophysics. Computer vision lies at the core of these innovations, offering the tools to capture and model the 4D world from partially observed image data.
         <br><br>
-        In recent years, we have seen remarkable progress in 3D computer vision, with increasingly robust and efficient models for reconstructing and generating 3D objects and scenes. 4D computer vision, as a natural extension of these efforts, is rapidly gaining traction. This workshop aims to establish a dedicated venue for discussions on this topic, bringing together researchers across various domains to exchange perspectives, identify challenges, and collectively accelerate progress in this space.
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="schedule">
-    <div class="container is-max-desktop content">
-      <h2 class="title">Schedule</h2>
-      <div class="content has-text-justified">
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <td width="150" style="background-color:#EFECCA">09:20 - 09:30</td>
-              <td><b>Opening Remarks</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#795663;color:#EFECCA">09:30 - 10:00</td>
-              <td><b>Adam Harley: "4D Vision Tomorrow: Structured, Slow, and Data-Driven"</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#795663;color:#EFECCA">10:00 - 10:30</td>
-              <td><b>Tali Dekel (remote): "Generative AI Beyond What It Is Meant To Do"</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#0081A7;color:#EFECCA">10:30 - 12:30</td>
-              <td><b>Poster Session (ExHall D, poster board ID #106-141)</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#EFECCA">12:30 - 13:30</td>
-              <td><b>Lunch Break</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#795663;color:#EFECCA">13:30 - 14:00</td>
-              <td><b>Andrea Vedaldi: "Feed-forward 4D: from scene to categories"</b>
-                <p class="subtitle is-7">New models like VGGT achieve excellent 3D reconstruction results using only neural network components in a feed-forward manner, entirely eschewing optimization. As such, they are credible building blocks for the future foundations of computer vision. However, most 3D reconstruction methods remain limited to static data, even though reconstructing dynamic scenes in 3D is, generally speaking, much more useful. In this talk, I will present Dynamic Point Maps, a principled dynamic extension of the point maps popularized by DuST3R, which encode both 3D geometry and motion, restoring certain invariants. I will also address the problem of data scarcity in 4D vision and demonstrate, through Geo4D, how one can build high-quality 4D reconstruction networks starting from video generators pre-trained on millions of videos. Finally, I will explore the challenge of modeling 4D object categories rather than entire scenes. To this end, I will introduce Dual Point Maps as an alternative to traditional deformable models for capturing the 3D shape and motion of dynamic objects.</p>
-              </td>
-            </tr>
-            <tr>
-              <td style="background-color:#795663;color:#EFECCA">14:00 - 14:30</td>
-              <td><b>Angjoo Kanazawa</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#795663;color:#EFECCA">14:30 - 15:00</td>
-              <td><b>Daniel Cremers</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#EFECCA">15:00 - 15:30</td>
-              <td><b>Coffee Break</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#795663;color:#EFECCA">15:30 - 16:00</td>
-              <td><b>Deva Ramanan</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#795663;color:#EFECCA">16:00 - 16:30</td>
-              <td><b>David Fouhey: "Measuring Scientific Data with 3D/4D Vision"</b>
-                <p class="subtitle is-7">As vision has changed from a discipline with potential to one with impact, one great new opportunity is empowering researchers in other areas of inquiry with better data. Over the past five years, I've been doing so with solar physics and evolutionary ecology, transferring what I've learned from 3D vision.  Although solar physics and ecology study objects of radically different scales, they are unified by a need for data that is higher volume, higher quality, and is easier to obtain. In this talk, I'll show efforts to this end done in collaboration with domain experts. In solar physics, our work includes systems to estimate the Sun's 3D vector magnetic field from multiple signals, which inform our understanding of a key driver of space weather. In evolutionary ecology, our collaborations have built one of the largest repositories of bird morphology, which has helped understand drivers of evolution. Throughout, I'll talk about some of our applications and lessons I've learned.</p>
-              </td>
-            </tr>
-            <tr>
-              <td style="background-color:#795663;color:#EFECCA">16:30 - 17:00</td>
-              <td><b>Kristen Grauman: "4D Human Activity Understanding"</b></td>
-            </tr>
-            <tr>
-              <td style="background-color:#EFECCA">17:00 - 17:05</td>
-              <td><b>Closing Remarks</b></td>
-            </tr>
-          </tbody>
-        </table>
+        In recent years, we have seen remarkable progress in 3D computer vision, with increasingly robust and efficient models for reconstructing and generating 3D objects and scenes. 4D computer vision (Dynamic 3D), as a natural extension of these efforts, is rapidly gaining traction. The time is right to continue a dedicated venue for discussions on this topic, bringing researchers together to exchange perspectives, identify challenges, and collectively accelerate progress. In this second edition of the workshop, we aim to explore the following topics:
+        <ul>
+          <li>General 4D visual scene modeling, reconstruction, and generation;</li>
+          <li>Category-specific 4D models, such as 4D humans, human-object interactions, and 4D animals;</li>
+          <li>Physically plausible 4D world model, simulation, and robotics;</li>
+          <li>Applications of 4D computer vision technologies in various engineering and science domains, such as biology, manufacturing, astrophysics, and beyond.</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="section" id="speakers">
     <div class="container is-max-desktop content">
-      <h2 class="title" id="speakers">Invited Speakers</h2>
+      <h2 class="title" id="speakers">Tentative Speakers</h2>
         <div class="columns is-multiline is-centered is-variable is-0">
+
+          <div class="column is-one-quarter">
+            <a href="https://geopavlakos.github.io/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/georgios_pavlakos.jpg" alt="Georgios Pavlakos">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Georgios Pavlakos</p>
+                      <p class="subtitle is-7">UT Austin</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://jiajunwu.com/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/jiajun_wu.jpg" alt="Jiajun Wu">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Jiajun Wu</p>
+                      <p class="subtitle is-7">Stanford University</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://dimadamen.github.io/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/dima_damen.jpg" alt="Dima Damen">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Dima Damen</p>
+                      <p class="subtitle is-7">University of Bristol / Google DeepMind</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://srinathsridhar.com/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/srinath_sridhar.jpg" alt="Srinath Sridhar">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Srinath Sridhar</p>
+                      <p class="subtitle is-7">Brown University</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://people.eecs.berkeley.edu/~trevor/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/trevor_darrell.jpg" alt="Trevor Darrell">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Trevor Darrell</p>
+                      <p class="subtitle is-7">UC Berkeley</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://mightychaos.github.io/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/chaoyang_wang.jpg" alt="Chaoyang Wang">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Chaoyang Wang</p>
+                      <p class="subtitle is-7">Snap</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
           <div class="column is-one-quarter">
             <a href="https://adamharley.com/">
@@ -378,6 +433,245 @@ background-color: #5e565a;
           </div>
 
           <div class="column is-one-quarter">
+            <a href="https://www.cs.cornell.edu/~snavely/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/noah_snavely.jpg" alt="Noah Snavely">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Noah Snavely</p>
+                      <p class="subtitle is-7">Cornell Tech / Google DeepMind</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="Papers">
+    <div class="container is-max-desktop content">
+      <h2 class="title" id="dates">Call for Papers</h2>
+      We welcome submissions of technical papers on dynamic 3D (4D) modeling and its wide-ranging applications across various fields including computer vision, embodied AI, robotics, sciences, and beyond.
+      We encourage both short papers (approximately 4 pages) presenting early-stage ideas and full-length technical papers (up to 8 pages excluding references). Additional content can be submitted as supplementary material.
+      Submissions should follow the <a href="https://github.com/cvpr-org/author-kit/releases">CVPR 2026 format</a>. The review process is double-blind.
+
+      <br><br>
+
+      <p style="background-color: #FFF3CD; padding: 10px; border-radius: 5px; border-left: 4px solid #FF7F11;">
+        <strong>Non-archival:</strong> Accepted papers will <strong>not</strong> be published in the proceedings. Thus, papers that have already been published at major conferences are also welcome. Authors may also submit their work to future conferences or journals after acceptance to this workshop.
+      </p>
+
+      <ul>
+        <li><b>Submission Portal</b>: OpenReview (link coming soon)</li>
+        <li><b>Paper Submission Deadline</b>: March 20th, 2026 23:59 (Anywhere on Earth)</li>
+        <li><b>Notification to Authors</b>: April 17th, 2026</li>
+        <li><b>Camera-ready Submission Deadline</b>: May 8th, 2026 23:59 (Anywhere on Earth)</li>
+      </ul>
+
+      If you have any questions, please contact us at <a href="mailto:4dvisionworkshop@googlegroups.com">4dvisionworkshop@googlegroups.com</a>.
+
+      <br><br>
+
+      <h4>Topics of Interest</h4>
+      <ul>
+        <li>4D reconstruction and generation</li>
+        <li>4D predictive modeling and forecasting</li>
+        <li>Tracking</li>
+        <li>SLAM in dynamic scenes</li>
+        <li>Multi-modal 4D understanding and language models</li>
+        <li>Egocentric 4D perception</li>
+        <li>Dynamic humans and animals</li>
+        <li>4D synthetic data and simulation</li>
+        <li>4D vision for embodied agents and robots</li>
+        <li>4D datasets and new sensors</li>
+        <li>Benchmarking and evaluation for 4D tasks</li>
+        <li>......</li>
+      </ul>
+
+      <br>
+
+      <h4>Reviewer Nomination</h4>
+      We are looking for reviewers with expertise in 4D vision and related fields. If you are interested in reviewing for the workshop, please fill out this form (link coming soon).
+
+    </div>
+  </section>
+
+  <section class="section" id="Organizers">
+    <div class="container is-max-desktop content">
+      <h2 class="title" id="organizers">Organizers</h2>
+
+        <div class="columns is-multiline is-centered is-variable is-0">
+
+          <div class="column is-one-quarter">
+            <a href="https://jiahuilei.com/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/jiahui_lei.jpg" alt="Jiahui Lei">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Jiahui Lei</p>
+                      <p class="subtitle is-7">UC Berkeley</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://elliottwu.com/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/shangzhe_wu.jpg" alt="Shangzhe Wu">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Shangzhe Wu</p>
+                      <p class="subtitle is-7">University of Cambridge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://www.cs.cmu.edu/~tkhurana/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/tarasha_khurana.jpg" alt="Tarasha Khurana">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Tarasha Khurana</p>
+                      <p class="subtitle is-7">Tesla</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://chen-geng.com/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/chen_geng.jpg" alt="Chen Geng">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Chen Geng</p>
+                      <p class="subtitle is-7">Stanford University</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://lilygoli.github.io/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/lily_goli.jpg" alt="Lily Goli">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Lily Goli</p>
+                      <p class="subtitle is-7">University of Toronto</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://gengshan-y.github.io/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/gengshan_yang.jpeg" alt="Gengshan Yang">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Gengshan Yang</p>
+                      <p class="subtitle is-7">World Labs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://qianqianwang68.github.io/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/qianqian_wang.jpg" alt="Qianqian Wang">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Qianqian Wang</p>
+                      <p class="subtitle is-7">Harvard University</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
+            <a href="https://geometry.stanford.edu/member/guibas/">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img class="is-rounded" src="./data/leonidas_guibas.jpg" alt="Leonidas Guibas">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content" style="overflow-x: unset;">
+                      <p class="title is-6 is-spaced">Leonidas Guibas</p>
+                      <p class="subtitle is-7">Stanford University / Google DeepMind</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column is-one-quarter">
             <a href="https://www.robots.ox.ac.uk/~vedaldi/">
               <div class="card">
                 <div class="card-image">
@@ -389,7 +683,7 @@ background-color: #5e565a;
                   <div class="media">
                     <div class="media-content" style="overflow-x: unset;">
                       <p class="title is-6 is-spaced">Andrea Vedaldi</p>
-                      <p class="subtitle is-7">University of Oxford / Meta</p>
+                      <p class="subtitle is-7">University of Oxford</p>
                     </div>
                   </div>
                 </div>
@@ -417,166 +711,21 @@ background-color: #5e565a;
             </a>
           </div>
 
-          <div class="column is-one-quarter">
-            <a href="https://cvg.cit.tum.de/members/cremers">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img class="is-rounded" src="./data/daniel_cremers.jpg" alt="Daniel Cremers">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">Daniel Cremers</p>
-                      <p class="subtitle is-7">TUM</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="column is-one-quarter">
-            <a href="https://cs.nyu.edu/~fouhey/">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img class="is-rounded" src="./data/david_fouhey.jpg" alt="David Fouhey">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">David Fouhey</p>
-                      <p class="subtitle is-7">NYU</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="column is-one-quarter">
-            <a href="https://www.cs.cmu.edu/~deva/">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img class="is-rounded" src="./data/deva_ramanan.jpg" alt="Deva Ramanan">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">Deva Ramanan</p>
-                      <p class="subtitle is-7">CMU</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="column is-one-quarter">
-            <a href="https://www.cs.utexas.edu/~grauman/">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img class="is-rounded" src="./data/kristen_grauman.jpg" alt="Kristen Grauman">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">Kristen Grauman</p>
-                      <p class="subtitle is-7">UT Austin</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="column is-one-quarter">
-            <a href="https://www.weizmann.ac.il/math/dekel/">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img class="is-rounded" src="./data/tali_dekel.jpg" alt="Tali Dekel">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">Tali Dekel</p>
-                      <p class="subtitle is-7">Weizmann Institute / Google</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
         </div>
+    </div>
+  </section>
 
+  <section class="section" id="schedule">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Schedule</h2>
+      <p>To be announced.</p>
     </div>
   </section>
 
   <section class="section" id="Accepted-Papers">
     <div class="container is-max-desktop content">
       <h2 class="title" id="papers">Accepted Papers</h2>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQH2FvLuXxJ91lVaDmMqVv2Z1ClYd8dxjZHFGWQE4u-6cj-Yp0Ucw1fIiGm7hxpSyrdHUXhJP9oEPls/pubhtml?widget=true&amp;headers=false" 
-        width="100%" 
-        height="1600" 
-        frameborder="0">
-      </iframe>
-    </div>
-  </section>
-
-  <section class="section" id="Papers">
-    <div class="container is-max-desktop content">
-      <h2 class="title" id="dates">Call for Papers</h2>
-      We welcome submissions of techical papers on dynamic 3D (4D) modeling and its wide-ranging applications across various fields including computer vision, embodied AI, robotics, sciences, and beyond.
-      We encourage both short papers (approximately 4 pages) presenting early-stage ideas and full-length technical papers (up to 8 pages excluding references). Additional content can be submitted as supplementary material.
-      Submissions should follow the <a href="https://github.com/cvpr-org/author-kit/releases">CVPR 2025 format</a>. The review process is double-blind and does not involve a rebuttal phase.
-
-      <br><br>
-
-      Accepted papers will <strong>not</strong> be published in the proceedings. <strong>Thus, papers that have already been published at major conferences are also welcome. Authors may also submit their work to future conferences or journals after acceptance to this workshop.</strong>
-
-      <ul>
-        <li><b>Submission Portal</b>: <a href="https://openreview.net/group?id=thecvf.com/CVPR/2025/Workshop/4DV">OpenReview</a> </li> 
-        <!-- <a href="">CMT</a></li> -->
-        <li><b>Paper Submission Deadline</b>: 11:59 pm, <s>March 28</s> April 4, 2025 (Pacific Time)</li>
-        <li><b>Notification to Authors</b>: <s>April 25</s> April 28, 2025</li>
-        <li><b>Camera-ready Submission Deadline</b>: 11:59 pm, May 21, 2025 (Pacific Time)</li>
-      </ul>
-
-      If you have any questions, please contact us at <a href="mailto:4dvisionworkshop@googlegroups.com">4dvisionworkshop@googlegroups.com</a>.
-
-      <br><br>
-
-      <h4>Topics of Interest</h4>
-      <ul>
-        <li>4D reconstruction and generation</li>
-        <li>4D predictive modeling and forecasting</li>
-        <li>Tracking</li>
-        <li>SLAM in dynamic scenes</li>
-        <li>Multi-modal 4D understanding and language models</li>
-        <li>Egocentric 4D perception</li>
-        <li>Dynamic humans and animals</li>
-        <li>4D synthetic data and simulation</li>
-        <li>4D vision for embodied agents and robots</li>
-        <li>4D datasets and new sensors</li>
-        <li>Benchmarking and evaluation for 4D tasks</li>
-        <li>......</li>
-      </ul>
-
-      <br>
-
-      <h4>Reviewer Nomination</h4>
-      We are looking for reviewers with expertise in 4D vision and related fields. If you are interested in reviewing for the workshop, please fill out <a href="https://forms.gle/yqPvnA9tbj9LsJrP7">this form</a>.
-
+      <p>To be announced.</p>
     </div>
   </section>
 
@@ -584,287 +733,7 @@ background-color: #5e565a;
     <div class="container is-max-desktop content">
       <h2 class="title" id="reviewers">Reviewers</h2>
       <div class="content has-text-justified">
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <td width="150">Aviral Chharia</td>
-              <td width="150">Bardienus Pieter Duisterhof</td>
-              <td width="150">Brian Nlong Zhao</td>
-              <td width="150">Chen Geng</td>
-            </tr>
-            <tr>
-              <td width="150">Chuhao Chen</td>
-              <td width="150">Guangzhao He</td>
-              <td width="150">Hirokatsu Kataoka</td>
-              <td width="150">Hong-Xing Yu</td>
-            </tr>
-            <tr>
-              <td width="150">Ishan Khatri</td>
-              <td width="150">Jeff Tan</td>
-              <td width="150">Jenny Seidenschwarz</td>
-              <td width="150">Jiaman Li</td>
-            </tr>
-            <tr>
-              <td width="150">Jianyuan Wang</td>
-              <td width="150">Khiem Vuong</td>
-              <td width="150">Koshi Makihara</td>
-              <td width="150">Linzhan Mou</td>
-            </tr>
-            <tr>
-              <td width="150">Minghao Chen</td>
-              <td width="150">Paul Engstler</td>
-              <td width="150">Qi Sun</td>
-              <td width="150">Rongqi Fan</td>
-            </tr>
-            <tr>
-              <td width="150">Shenhan Qian</td>
-              <td width="150">Shizun Wang</td>
-              <td width="150">Sholder Lyko</td>
-              <td width="150">Sizhe Wei</td>
-            </tr>
-            <tr>
-              <td width="150">Suyash Damle</td>
-              <td width="150">Ting-Hsuan Liao</td>
-              <td width="150">Tushar Shinde</td>
-              <td width="150">Varun Kumar Reddy Bankiti</td>
-            </tr>
-            <tr>
-              <td width="150">Wanyue Zhang</td>
-              <td width="150">Weijia Zeng</td>
-              <td width="150">Yash Sanjay Bhalgat</td>
-              <td width="150">Yufu Wang</td>
-            </tr>
-            <tr>
-              <td width="150">Yunzhou Song</td>
-              <td width="150">Yunzhi Zhang</td>
-              <td width="150">Zeren Jiang</td>
-              <td width="150">Zhengfei Kuang</td>
-            </tr>
-            <tr>
-              <td width="150">Zhening Huang</td>
-              <td width="150">Zhiyang Dou</td>
-              <td width="150">Zirui Wang</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="Organizers">
-    <div class="container is-max-desktop content">
-      <h2 class="title" id="organizers">Organizers</h2>
-
-      <div class="columns is-centered is-variable is-0">
-
-        <div class="column is-one-quarter">
-          <a href="https://elliottwu.com/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/shangzhe_wu.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Elliott (Shangzhe) Wu</p>
-                    <p class="subtitle is-7">University of Cambridge</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="column is-one-quarter">
-          <a href="https://www.cis.upenn.edu/~leijh/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/jiahui_lei.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Jiahui Lei</p>
-                    <p class="subtitle is-7">University of Pennsylvania</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="column is-one-quarter">
-          <a href="https://cs.stanford.edu/~congyue/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/congyue_deng.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Congyue Deng</p>
-                    <p class="subtitle is-7">Stanford University</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="column is-one-quarter">
-          <a href="https://www.cs.cmu.edu/~tkhurana/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/tarasha_khurana.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Tarasha Khurana</p>
-                    <p class="subtitle is-7">CMU</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-
-      <div class="columns is-centered is-variable is-0">
-
-        <div class="column is-one-quarter">
-          <a href="https://judyye.github.io/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/yufei_ye.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Yufei Ye</p>
-                    <p class="subtitle is-7">Stanford University</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="column is-one-quarter">
-          <a href="https://ruoshiliu.github.io/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/ruoshi_liu.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Ruoshi Liu</p>
-                    <p class="subtitle is-7">Columbia University</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="column is-one-quarter">
-          <a href="https://gengshan-y.github.io/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/gengshan_yang.jpeg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Gengshan Yang</p>
-                    <p class="subtitle is-7">World Labs</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="column is-one-quarter">
-          <a href="https://qianqianwang68.github.io/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/qianqian_wang.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Qianqian Wang</p>
-                    <p class="subtitle is-7">UC Berkeley</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-
-      <div class="columns is-centered is-variable is-0">
-
-        <div class="column is-one-quarter">
-          <a href="https://holynski.org/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/aleksander_holynski.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Aleksander Hołyński</p>
-                    <p class="subtitle is-7">Google / UC Berkeley</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="column is-one-quarter">
-          <a href="http://www.carldoersch.com/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/carl_doersch.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Carl Doersch</p>
-                    <p class="subtitle is-7">Google</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
+        <p>To be announced.</p>
       </div>
     </div>
   </section>

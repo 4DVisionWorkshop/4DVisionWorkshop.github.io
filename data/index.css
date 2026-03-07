@@ -155,3 +155,97 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* ── Profile cards ── */
+.card {
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 10px 10px 6px;
+}
+
+.card .card-image figure.image {
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 4px;
+}
+
+/* Rectangular photos — override Bulma is-rounded */
+.card .card-image figure.image img,
+.card .card-image figure.image img.is-rounded {
+  border-radius: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.card .card-content {
+  padding: 8px 0 0;
+}
+
+.card .card-content .media {
+  margin: 0;
+}
+
+.card .card-content .media-content {
+  min-height: 2.6rem;
+}
+
+.card .card-content .title.is-6 {
+  margin-bottom: 0.1rem !important;
+  font-size: 0.88rem !important;
+  line-height: 1.25;
+}
+
+.card .card-content .subtitle.is-7 {
+  font-size: 0.72rem !important;
+  line-height: 1.25;
+  color: #666;
+}
+
+/* ── Grid layout ── */
+.columns.is-multiline {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.columns.is-multiline > .column {
+  padding: 0.6rem !important;
+}
+
+/* 4 per row */
+.columns.is-multiline .column.is-one-quarter {
+  flex: none !important;
+  width: 25% !important;
+}
+
+@media screen and (max-width: 768px) {
+  .columns.is-multiline .column.is-one-quarter {
+    width: 33.3333% !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .columns.is-multiline .column.is-one-quarter {
+    width: 50% !important;
+  }
+
+  .columns.is-multiline > .column {
+    padding: 0.35rem !important;
+  }
+
+  .card .card-content .title.is-6 {
+    font-size: 0.75rem !important;
+  }
+
+  .card .card-content .subtitle.is-7 {
+    font-size: 0.6rem !important;
+  }
+}
