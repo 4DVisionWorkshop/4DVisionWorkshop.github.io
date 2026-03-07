@@ -22,9 +22,9 @@
 
 <style>
   .page-header1 {
-background-image: url('data/web_teaser.jpg');
+background-image: linear-gradient(180deg, transparent 60%, #eae6e1), url('data/web_teaser.jpg');
 background-repeat: no-repeat;
-background-size: 100% ;
+background-size: 100%, 100%;
 background-position: center;
 padding-bottom: 1rem;
 background-color: #5e565a;
@@ -38,11 +38,7 @@ background-color: #5e565a;
     color: #5c5c5c;
   }
 
-  .button {
-    border-radius: 10px;
-    background: #ffffffd0;
-    padding: 5px 15px 5px 15px;
-  }
+  /* hero-nav-btn styled in index.css */
 
   .dropdown {
     position: relative;
@@ -263,32 +259,31 @@ background-color: #5e565a;
       <br>
       <br>
       <h2 class="subtitle has-text-centered">
-        <a href="#speakers" class="button">Speakers</a>
-          <a href="#dates" class="button">Call for Papers</a>
-          <a href="#organizers" class="button">Organizers</a>
+        <a href="#speakers" class="hero-nav-btn">Speakers</a>
+          <a href="#dates" class="hero-nav-btn">Call for Papers</a>
+          <a href="#organizers" class="hero-nav-btn">Organizers</a>
       </h2>
     </div>
   </section>
 
-  <section class="section" id="motivation">
-    <div class="container is-max-desktop content">
+  <section class="section glass-section" id="motivation">
+    <div class="glass">
       <h2 class="title">Overview</h2>
-      <div class="content has-text-justified">
-        We live in a dynamic 3D world. Enabling machines to see and understand the world in 4D (3D + time) unlocks numerous real-world applications across various domains. These include designing autonomous robots capable of navigating and interacting with complex real-world environments, creating immersive and interactive virtual worlds that seamlessly blend with physical reality, and unveiling the mysteries of life and the universe, for instance, in biology and astrophysics. Computer vision lies at the core of these innovations, offering the tools to capture and model the 4D world from partially observed image data.
-        <br><br>
-        In recent years, we have seen remarkable progress in 3D computer vision, with increasingly robust and efficient models for reconstructing and generating 3D objects and scenes. 4D computer vision (Dynamic 3D), as a natural extension of these efforts, is rapidly gaining traction. The time is right to continue a dedicated venue for discussions on this topic, bringing researchers together to exchange perspectives, identify challenges, and collectively accelerate progress. In this second edition of the workshop, we aim to explore the following topics:
+      <div class="content">
+        <p>Understanding the world in <strong>4D</strong> &mdash; 3D over time &mdash; is fundamental to autonomous robotics, immersive virtual worlds, and scientific discovery. Building on rapid advances in 3D vision, <strong>4D computer vision (Dynamic 3D)</strong> is emerging as a vibrant research frontier.</p>
+        <p>This second edition of the workshop brings researchers together to accelerate progress on:</p>
         <ul>
-          <li>General 4D visual scene modeling, reconstruction, and generation;</li>
-          <li>Category-specific 4D models, such as 4D humans, human-object interactions, and 4D animals;</li>
-          <li>Physically plausible 4D world model, simulation, and robotics;</li>
-          <li>Applications of 4D computer vision technologies in various engineering and science domains, such as biology, manufacturing, astrophysics, and beyond.</li>
+          <li>4D scene modeling, reconstruction, and generation</li>
+          <li>Category-specific 4D models &mdash; humans, objects, animals</li>
+          <li>Physically plausible world models, simulation, and robotics</li>
+          <li>Applications in biology, manufacturing, astrophysics, and beyond</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="section" id="speakers">
-    <div class="container is-max-desktop content">
+  <section class="section glass-section" id="speakers">
+    <div class="glass">
       <h2 class="title" id="speakers">Tentative Speakers</h2>
         <div class="columns is-multiline is-centered is-variable is-0">
 
@@ -457,56 +452,51 @@ background-color: #5e565a;
     </div>
   </section>
 
-  <section class="section" id="Papers">
-    <div class="container is-max-desktop content">
+  <section class="section glass-section" id="Papers">
+    <div class="glass">
       <h2 class="title" id="dates">Call for Papers</h2>
-      We welcome submissions of technical papers on dynamic 3D (4D) modeling and its wide-ranging applications across various fields including computer vision, embodied AI, robotics, sciences, and beyond.
-      We encourage both short papers (approximately 4 pages) presenting early-stage ideas and full-length technical papers (up to 8 pages excluding references). Additional content can be submitted as supplementary material.
-      Submissions should follow the <a href="https://github.com/cvpr-org/author-kit/releases">CVPR 2026 format</a>. The review process is double-blind.
+      <div class="content">
+        <p>We invite <strong>short papers (~4 pages)</strong> and <strong>full-length papers (up to 8 pages</strong> excl. references) on dynamic 3D (4D) modeling and applications.
+        Submissions follow the <a href="https://github.com/cvpr-org/author-kit/releases">CVPR 2026 format</a> (double-blind). Supplementary material is allowed.</p>
 
-      <br><br>
+        <div class="callout-glass">
+          <strong>Non-archival:</strong> Accepted papers will <strong>not</strong> be published in proceedings. Previously published work is welcome. Authors may resubmit to future venues after acceptance.
+        </div>
 
-      <p style="background-color: #FFF3CD; padding: 10px; border-radius: 5px; border-left: 4px solid #FF7F11;">
-        <strong>Non-archival:</strong> Accepted papers will <strong>not</strong> be published in the proceedings. Thus, papers that have already been published at major conferences are also welcome. Authors may also submit their work to future conferences or journals after acceptance to this workshop.
-      </p>
+        <h4>Key Dates</h4>
+        <ul class="dates-list">
+          <li><b>Submission Portal:</b> OpenReview (link coming soon)</li>
+          <li><b>Paper Deadline:</b> March 20, 2026 &mdash; 23:59 AoE</li>
+          <li><b>Notification:</b> April 17, 2026</li>
+          <li><b>Camera-ready:</b> May 8, 2026 &mdash; 23:59 AoE</li>
+        </ul>
 
-      <ul>
-        <li><b>Submission Portal</b>: OpenReview (link coming soon)</li>
-        <li><b>Paper Submission Deadline</b>: March 20th, 2026 23:59 (Anywhere on Earth)</li>
-        <li><b>Notification to Authors</b>: April 17th, 2026</li>
-        <li><b>Camera-ready Submission Deadline</b>: May 8th, 2026 23:59 (Anywhere on Earth)</li>
-      </ul>
+        <p>Questions? Contact <a href="mailto:4dvisionworkshop@googlegroups.com">4dvisionworkshop@googlegroups.com</a></p>
 
-      If you have any questions, please contact us at <a href="mailto:4dvisionworkshop@googlegroups.com">4dvisionworkshop@googlegroups.com</a>.
+        <h4>Topics of Interest</h4>
+        <div style="column-count: 2; column-gap: 2rem;">
+          <ul style="margin-top: 0;">
+            <li>4D reconstruction &amp; generation</li>
+            <li>4D predictive modeling</li>
+            <li>Tracking &amp; SLAM</li>
+            <li>Multi-modal 4D understanding</li>
+            <li>Egocentric 4D perception</li>
+            <li>Dynamic humans &amp; animals</li>
+            <li>4D simulation &amp; synthetic data</li>
+            <li>Embodied agents &amp; robots</li>
+            <li>4D datasets &amp; sensors</li>
+            <li>Benchmarking &amp; evaluation</li>
+          </ul>
+        </div>
 
-      <br><br>
-
-      <h4>Topics of Interest</h4>
-      <ul>
-        <li>4D reconstruction and generation</li>
-        <li>4D predictive modeling and forecasting</li>
-        <li>Tracking</li>
-        <li>SLAM in dynamic scenes</li>
-        <li>Multi-modal 4D understanding and language models</li>
-        <li>Egocentric 4D perception</li>
-        <li>Dynamic humans and animals</li>
-        <li>4D synthetic data and simulation</li>
-        <li>4D vision for embodied agents and robots</li>
-        <li>4D datasets and new sensors</li>
-        <li>Benchmarking and evaluation for 4D tasks</li>
-        <li>......</li>
-      </ul>
-
-      <br>
-
-      <h4>Reviewer Nomination</h4>
-      We are looking for reviewers with expertise in 4D vision and related fields. If you are interested in reviewing for the workshop, please fill out this form (link coming soon).
-
+        <h4>Reviewer Nomination</h4>
+        <p>We are looking for reviewers with 4D vision expertise. Interested? Fill out this form (link coming soon).</p>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="Organizers">
-    <div class="container is-max-desktop content">
+  <section class="section glass-section" id="Organizers">
+    <div class="glass">
       <h2 class="title" id="organizers">Organizers</h2>
 
         <div class="columns is-multiline is-centered is-variable is-0">
@@ -715,26 +705,24 @@ background-color: #5e565a;
     </div>
   </section>
 
-  <section class="section" id="schedule">
-    <div class="container is-max-desktop content">
+  <section class="section glass-section" id="schedule">
+    <div class="glass">
       <h2 class="title">Schedule</h2>
       <p>To be announced.</p>
     </div>
   </section>
 
-  <section class="section" id="Accepted-Papers">
-    <div class="container is-max-desktop content">
+  <section class="section glass-section" id="Accepted-Papers">
+    <div class="glass">
       <h2 class="title" id="papers">Accepted Papers</h2>
       <p>To be announced.</p>
     </div>
   </section>
 
-  <section class="section" id="Reviewers">
-    <div class="container is-max-desktop content">
+  <section class="section glass-section" id="Reviewers">
+    <div class="glass">
       <h2 class="title" id="reviewers">Reviewers</h2>
-      <div class="content has-text-justified">
-        <p>To be announced.</p>
-      </div>
+      <p>To be announced.</p>
     </div>
   </section>
 
