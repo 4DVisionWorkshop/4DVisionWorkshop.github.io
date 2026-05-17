@@ -177,6 +177,40 @@ a:has(.card) {
   margin-bottom: 0.75rem;
 }
 
+/* ── Event highlight (date/location) ── */
+.event-highlight {
+  display: inline-block;
+  margin: 1.25rem auto 0;
+  padding: 14px 28px;
+  background: rgba(255, 127, 17, 0.18);
+  border: 2px solid #FF7F11;
+  border-radius: 14px;
+  box-shadow: 0 0 22px rgba(255, 127, 17, 0.45);
+  color: #EFECCA !important;
+  font-weight: 800 !important;
+  font-size: 1.55rem !important;
+  letter-spacing: 0.3px;
+  line-height: 1.45;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+.event-highlight .event-line {
+  display: block;
+}
+
+.event-highlight .event-label {
+  color: #FFD27F;
+  font-weight: 900;
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .event-highlight {
+    font-size: 1.15rem !important;
+    padding: 12px 18px;
+  }
+}
+
 /* ── Non-archival callout (glass style) ── */
 .callout-glass {
   background: rgba(255, 200, 80, 0.15);
@@ -221,14 +255,24 @@ a:has(.card) {
   width: 25% !important;
 }
 
+/* 3 per row */
+.columns.is-multiline .column.is-one-third {
+  flex: none !important;
+  width: 33.3333% !important;
+}
+
 @media screen and (max-width: 768px) {
   .columns.is-multiline .column.is-one-quarter {
     width: 33.3333% !important;
   }
+  .columns.is-multiline .column.is-one-third {
+    width: 50% !important;
+  }
 }
 
 @media screen and (max-width: 520px) {
-  .columns.is-multiline .column.is-one-quarter {
+  .columns.is-multiline .column.is-one-quarter,
+  .columns.is-multiline .column.is-one-third {
     width: 50% !important;
   }
 
@@ -358,4 +402,63 @@ a:has(.card) {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* ── Accepted Papers table ── */
+.accepted-papers-table {
+  background: transparent;
+}
+.accepted-papers-table tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.accepted-papers-table tbody tr:last-child {
+  border-bottom: none;
+}
+.accepted-papers-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.55);
+}
+.accepted-papers-table td {
+  vertical-align: middle;
+  padding: 0.85rem 0.75rem;
+  border: none;
+}
+.paper-title {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+.paper-authors {
+  color: #555;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+.paper-type-cell {
+  white-space: nowrap;
+  text-align: right;
+  width: 1%;
+}
+
+/* ── Reviewers table ── */
+.reviewers-table {
+  background: transparent;
+  table-layout: fixed;
+}
+.reviewers-table tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.reviewers-table tbody tr:last-child {
+  border-bottom: none;
+}
+.reviewers-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.reviewers-table td {
+  vertical-align: middle;
+  padding: 0.6rem 0.5rem;
+  border: none;
+  font-size: 0.92rem;
+  color: #2a2a2a;
+  word-break: break-word;
 }
