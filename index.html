@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="./data/bulma.min.css">
 <link rel="stylesheet" href="./data/fontawesome.all.min.css">
 <link rel="stylesheet" href="./data/academicons.min.css">
-<link rel="stylesheet" href="./data/index.css?v=2026.3">
+<link rel="stylesheet" href="./data/index.css?v=2026.7">
 <link rel="icon" href="https://opensun3d.github.io/static/images/favicon.svg">
 <link rel="stylesheet" href="./data/style.css"> <!-- Resource style -->
 <script src="./data/modernizr.js"></script> <!-- Modernizr -->
@@ -430,27 +430,58 @@ background-color: #5e565a;
 
   <section class="section glass-section" id="schedule">
     <div class="glass">
-      <h2 class="title">Tentative Schedule <span style="font-size:0.6em;color:#888;font-weight:normal">(may change)</span></h2>
+      <h2 class="title">Schedule</h2>
       <p style="margin-bottom:1em">Half-day workshop on <strong>June 4 Afternoon</strong>, Room 506, Denver Convention Center.</p>
-      <table class="table is-fullwidth schedule-table">
-        <thead>
-          <tr>
-            <th style="width:140px">Time</th>
-            <th>Session</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="background:#795663;color:#fff"><td style="font-weight:600;white-space:nowrap">1:00 – 1:30</td><td>Invited Talk &mdash; Georgios Pavlakos</td></tr>
-          <tr style="background:#795663;color:#fff"><td style="font-weight:600;white-space:nowrap">1:30 – 2:00</td><td>Invited Talk &mdash; Jiajun Wu</td></tr>
-          <tr style="background:#795663;color:#fff"><td style="font-weight:600;white-space:nowrap">2:00 – 2:30</td><td>Invited Talk &mdash; Dima Damen</td></tr>
-          <tr style="background:#795663;color:#fff"><td style="font-weight:600;white-space:nowrap">2:30 – 3:00</td><td>Invited Talk &mdash; Srinath Sridhar</td></tr>
-          <tr style="background:#EFECCA;color:#2c2c2c"><td style="font-weight:600;white-space:nowrap">3:00 – 3:30</td><td>Tea Break</td></tr>
-          <tr style="background:#795663;color:#fff"><td style="font-weight:600;white-space:nowrap">3:30 – 4:00</td><td>Invited Talk &mdash; Noah Snavely</td></tr>
-          <tr style="background:#795663;color:#fff"><td style="font-weight:600;white-space:nowrap">4:00 – 4:30</td><td>Invited Talk &mdash; Chaoyang Wang</td></tr>
-          <tr style="background:#795663;color:#fff"><td style="font-weight:600;white-space:nowrap">4:30 – 5:00</td><td>Spotlight Talks</td></tr>
-          <tr style="background:#0081A7;color:#fff"><td style="font-weight:600;white-space:nowrap">5:00 – 6:00</td><td>Poster Session</td></tr>
-        </tbody>
-      </table>
+      <div class="program">
+        <div class="program-row">
+          <div class="program-time">1:00<span class="ampm">pm</span></div>
+          <div class="program-body"><span class="program-kind kind-talk">Invited Talk</span><span class="program-title">Georgios Pavlakos</span></div>
+        </div>
+        <div class="program-row">
+          <div class="program-time">1:30<span class="ampm">pm</span></div>
+          <div class="program-body"><span class="program-kind kind-talk">Invited Talk</span><span class="program-title">Jiajun Wu</span></div>
+        </div>
+        <div class="program-row">
+          <div class="program-time">2:00<span class="ampm">pm</span></div>
+          <div class="program-body"><span class="program-kind kind-talk">Invited Talk</span><span class="program-title">Dima Damen</span></div>
+        </div>
+        <div class="program-row">
+          <div class="program-time">2:30<span class="ampm">pm</span></div>
+          <div class="program-body"><span class="program-kind kind-talk">Invited Talk</span><span class="program-title">Srinath Sridhar</span></div>
+        </div>
+
+        <div class="program-break"><span>Tea Break &middot; 3:00 &ndash; 3:30</span></div>
+
+        <div class="program-row">
+          <div class="program-time">3:30<span class="ampm">pm</span></div>
+          <div class="program-body"><span class="program-kind kind-talk">Invited Talk</span><span class="program-title">Noah Snavely</span></div>
+        </div>
+        <div class="program-row">
+          <div class="program-time">4:00<span class="ampm">pm</span></div>
+          <div class="program-body"><span class="program-kind kind-talk">Invited Talk</span><span class="program-title">Chaoyang Wang</span></div>
+        </div>
+
+        <div class="program-row">
+          <div class="program-time">4:30<span class="ampm">pm</span></div>
+          <div class="program-body">
+            <span class="program-kind kind-oral">Oral Session</span>
+            <ol class="program-orals">
+              <li><span class="o-title">Any4D: Unified Feed-Forward Metric 4D Reconstruction</span><span class="o-author">Jay Karhade</span></li>
+              <li><span class="o-title">LoGeR: Long-Context Dynamic 3D Reconstruction with Hybrid Memory</span><span class="o-author">Junyi Zhang</span></li>
+              <li><span class="o-title">FreeOrbit4D: Training-Free Arbitrary Camera Redirection for Monocular Videos</span><span class="o-author">Wei Cao</span></li>
+              <li><span class="o-title">Choreographing a World of Dynamic Objects</span><span class="o-author">Chen Geng</span></li>
+              <li><span class="o-title">Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions</span><span class="o-author">Kaifeng Zhang</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="program-row">
+          <div class="program-time">5:00<span class="ampm">pm</span></div>
+          <div class="program-body"><span class="program-kind kind-poster">Poster Session</span><span class="program-title">All accepted papers</span></div>
+        </div>
+
+        <div class="program-end">Workshop concludes &middot; 6:00 pm</div>
+      </div>
     </div>
   </section>
 
@@ -758,9 +789,9 @@ background-color: #5e565a;
               <div class="paper-authors">Junmyeong Lee, Hoseung Choi, Minsu Cho</div>
             </td>
           </tr>
-          <tr>
+          <tr class="paper-oral">
             <td>
-              <div class="paper-title">Any4D: Unified Feed-Forward Metric 4D Reconstruction</div>
+              <div class="paper-title"><span class="oral-badge">Oral</span>Any4D: Unified Feed-Forward Metric 4D Reconstruction</div>
               <div class="paper-authors">Jay Karhade, Nikhil Varma Keetha, Yuchen Zhang, Tanisha Gupta, Akash Sharma, Sebastian Scherer, Deva Ramanan</div>
             </td>
           </tr>
@@ -830,9 +861,9 @@ background-color: #5e565a;
               <div class="paper-authors">Xiaoyan Liu, Kangrui Li, Jiaxin liu, Sifan Zhou</div>
             </td>
           </tr>
-          <tr>
+          <tr class="paper-oral">
             <td>
-              <div class="paper-title">LoGeR: Long-Context Dynamic 3D Reconstruction with Hybrid Memory</div>
+              <div class="paper-title"><span class="oral-badge">Oral</span>LoGeR: Long-Context Dynamic 3D Reconstruction with Hybrid Memory</div>
               <div class="paper-authors">Junyi Zhang, Charles Herrmann, Junhwa Hur, Chen Sun, Ming-Hsuan Yang, Forrester Cole, Trevor Darrell, Deqing Sun</div>
             </td>
           </tr>
@@ -866,9 +897,9 @@ background-color: #5e565a;
               <div class="paper-authors">Damani Mguni-Coker</div>
             </td>
           </tr>
-          <tr>
+          <tr class="paper-oral">
             <td>
-              <div class="paper-title">FreeOrbit4D: Training-Free Arbitrary Camera Redirection for Monocular Videos via Foreground-Complete 4D Reconstruction</div>
+              <div class="paper-title"><span class="oral-badge">Oral</span>FreeOrbit4D: Training-Free Arbitrary Camera Redirection for Monocular Videos via Foreground-Complete 4D Reconstruction</div>
               <div class="paper-authors">Wei Cao, Hao Zhang, Fengrui Tian, Yulun Wu, Yingying Li, Shenlong Wang, Ning Yu, Yaoyao Liu</div>
             </td>
           </tr>
@@ -896,15 +927,15 @@ background-color: #5e565a;
               <div class="paper-authors">Derek Austin</div>
             </td>
           </tr>
-          <tr>
+          <tr class="paper-oral">
             <td>
-              <div class="paper-title">Choreographing a World of Dynamic Objects</div>
+              <div class="paper-title"><span class="oral-badge">Oral</span>Choreographing a World of Dynamic Objects</div>
               <div class="paper-authors">Yanzhe Lyu, Chen Geng, Karthik Dharmarajan, Yunzhi Zhang, Hadi Alzayer, Shangzhe Wu, Jiajun Wu</div>
             </td>
           </tr>
-          <tr>
+          <tr class="paper-oral">
             <td>
-              <div class="paper-title">Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions</div>
+              <div class="paper-title"><span class="oral-badge">Oral</span>Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions</div>
               <div class="paper-authors">Kaifeng Zhang, Shuo Sha, Hanxiao Jiang, Matthew Loper, Hyunjong Song, Guangyan Cai, Zhuo Xu, Xiaochen Hu, Changxi Zheng, Yunzhu Li</div>
             </td>
           </tr>
