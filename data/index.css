@@ -223,6 +223,47 @@ a:has(.card) {
   margin: 0.75rem 0;
 }
 
+/* ── Top announcement banner ── */
+.section.glass-section.announcement-section {
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+}
+.announcement-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-left: 5px solid #FF7F11;
+}
+.announcement-tag {
+  flex: 0 0 auto;
+  display: inline-block;
+  background: #FF7F11;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+.announcement-text {
+  font-size: 1.02rem;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+.announcement-text a {
+  color: #1f6391;
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .announcement-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
 /* ── Key dates ── */
 .dates-list {
   list-style: none !important;
@@ -608,6 +649,36 @@ a:has(.card) {
   border-radius: 4px;
   margin-right: 8px;
   vertical-align: middle;
+}
+
+/* ── Poster board badge ── */
+.board-cell {
+  white-space: nowrap;
+  text-align: right;
+  width: 1%;
+  vertical-align: middle;
+}
+.board-badge {
+  display: inline-block;
+  background: rgba(41, 128, 185, 0.12);
+  color: #1f6391;
+  border: 1px solid rgba(41, 128, 185, 0.32);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  padding: 5px 11px;
+  border-radius: 8px;
+  text-align: center;
+}
+.board-badge .board-label {
+  display: block;
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2980b9;
+  opacity: 0.85;
 }
 
 /* ── Reviewers table ── */
